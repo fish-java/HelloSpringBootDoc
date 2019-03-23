@@ -25,11 +25,25 @@
 - 不需要Spring 框架的知识
 - 不需要servlet，xml，jsp的知识
 
-## List of this repo
-- [配置环境](./set-env.md)
-- [解释下基本概念](./concept.md)
-- [使用servlet处理请求响应](./servlet.md)
-- [读取路由参数](./router-args.md)
-- [查询字符串、请求头、请求体](./request.nd)
-- [配置文件的重写和读取](./conf.md)
-- [响应体，状态码]()
+## 代码管理
+
+源代码都放在<a target=_blank href="https://github.com/fish56/HelloSpringBootSrc">这个仓库</a>了。使用git进行管理。不同的模块使用不同的分支来处理。
+
+## 目录
+
+#### [overview](./overview/README.md)
+
+关于Spring Boot的基本情况的介绍。这个部分的代码都放在源代码的master分支上了。
+
+
+
+## Git
+
+本系列的源代码使用git进行管理，相关代码在[这个仓库](https://github.com/fish56/HelloSpringBootSrc)
+
+因为有的时候可能是我没有说清楚，导致读者不知道代码发生了什么变化。
+
+每一个小节都会有一个单独的commit，读者可以通过commit来对比代码的变化。
+
+这也是文字教程的一个优势。
+

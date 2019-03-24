@@ -44,9 +44,9 @@ public class Hello {
     }
 }
 ```
-使用Spring Boot是有点类似于面向注解编程。它通过读取相关被注解的类，方法以及参数来调度程序。
+使用Spring Boot是有点类似于面向注解编程。它通过运行时读取相关被注解的类，方法以及参数来调度程序。
 
-上面的代码中，我们给Hello这个类添加了两个注解
+上面的代码中，我们给Hello这个类添加了几个注解
 
 - `@RestController`
   这个注解告诉S B这个类将来会用作控制器，它将被用来处理HTTP请求。
@@ -59,10 +59,38 @@ public class Hello {
 - `@PostMapping` `@PatchMapping` 。。。聪明的你一定
   推测出了还有这样的注解。是的，没错。
 
-因为我们之前设置了`@RestController`，所以S B会把sayHello的
-返回值写到HTTP响应的响应体里面，然后就有之前我们打开浏览器看到
-的Hello World 字符串了。
+因为我们之前设置了`@RestController`，所以Spring Boot会把sayHello的返回值写到HTTP响应的响应体里面，然后就有之前我们打开浏览器看到的Hello World 字符串了。
 
-Spring Boot的注解非常灵活，达到上面的效果有非常多的写法。
-但是我认为过度的灵活只会带来混乱，所以这个教程我只会使用
-一种我认为比较不错的注解风格，至于其他写法读者可以执行查阅官方文档。
+### main 方法
+
+Spring Boot 遵守了Java传统，通过main方法来作为程序的入口。
+
+``` java
+@SpringBootApplication
+public class HelloSpringBootApplication {
+	public static void main(String[] args) {
+		SpringApplication.run(HelloSpringBootApplication.class, args);
+	}
+}
+```
+
+- `@SpringBootApplication`这个注解告诉SpringBoot使用默认设置自动配置我们的项目
+
+- `SpringApplication`这个类是SpringBoot程序的引导类，通过它的`run`方法来初始化我们的项目、启动Spring、配置Tomcat。。。
+
+### 注解风格
+
+Spring Boot的注解非常灵活，达到同样的效果有非常多的写法。但是我认为过度的灵活只会带来混乱，所以这个教程我只会使用一种我认为比较不错的注解风格，至于其他写法读者可以自行查阅官方文档。
+
+
+
+### Default Package
+
+很多同学嫌麻烦，不喜欢写包名，把一些类放在更目录也就是`默认包`里面。这可能会导致SpringBoot检索到错误的注解。所以一定要写包名，不要使用默认包。
+
+
+
+### 自动配置
+
+如果你将一些依赖比如Spring Security添加到pom文件中，Spring Boot会自动检索它们，比不需要在代码中显示的引用。
+

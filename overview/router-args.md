@@ -69,5 +69,5 @@ public class Books {
 
 ``` bash
 $ git checkout router-params
-$ git diff servlet router-params 
+$ git diff restart router-params 
 ```

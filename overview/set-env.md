@@ -97,8 +97,7 @@ public class Hello {
 ```
 
 ## 启动
-我们可以在当前目录的命令行使用mvn打包项目，
-然后直接执行生成的jar包：
+我们可以在当前目录的命令行使用mvn打包项目，然后直接执行生成的jar包：
 
 ``` bash
 mvn install
@@ -124,3 +123,5 @@ Hello World的字样。
 ```
 git checkout init
 ```
+
+记得是在master分支上。

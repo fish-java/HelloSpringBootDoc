@@ -31,8 +31,8 @@ public class Users {
 ```
 ![](./request/idea.png)
 ![](./request/body.png)
-![](./router/params.png)
-![](./router/header.png)
+![](./request/params.png)
+![](./request/header.png)
 
 注意，如果你查询字符串的参数写的是 `name=jack`,那么你传递
 参数的时候，那个变量名也要是`name`,不然在多参数的情况就会

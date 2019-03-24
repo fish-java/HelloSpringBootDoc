@@ -77,7 +77,7 @@ public class HelloSpringBootApplication {
 
 然后我们使用postman来尝试访问这个路由，试一下。
 
-在postman中，我们发起了一个get请求，并给它设置了**查询字符串**、**请求头**、**请求体**。
+在postman中，我们发起了一个get请求，并给它设置了**查询字符串**、**请求头**、**请求体**。(记得重启程序)
 ![](./servlet/header.png)
 ![](./servlet/res.png)
 

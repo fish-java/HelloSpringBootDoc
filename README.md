@@ -29,11 +29,32 @@
 
 源代码都放在<a target=_blank href="https://github.com/fish56/HelloSpringBootSrc">这个仓库</a>了。使用git进行管理。不同的模块使用不同的分支来处理。
 
+## 使用建议
+
+- 将博客clone到本地，用markdown解析器阅读
+- 将代码clone到本地
+- 自己的开发代码单独一份，因为经常要在不同的commit之间跳转，所以不建议在clone的代码上修改。
+- 对代码一些内容不明确，多使用git diff
+
+官方文档，28定律
+
 ## 目录
 
-#### [overview](./overview/README.md)
+- ### [overview](./overview/README.md)
 
 关于Spring Boot的基本情况的介绍。这个部分的代码都放在源代码的master分支上了。
+
+上面是基本内容，必读，后续的可以分开越，在原来的history上开新的branch 来处理
+
+(按照对应的目录名来阅读，不必按照顺序)
+
+- configuration
+
+  配置文件相关的知识点
+
+- log
+
+  日志相关的知识点
 
 
 
@@ -46,4 +67,3 @@
 每一个小节都会有一个单独的commit，读者可以通过commit来对比代码的变化。
 
 这也是文字教程的一个优势。
-
